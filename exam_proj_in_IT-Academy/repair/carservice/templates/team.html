@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="indent-left">
+    <div class="wrapper border-bot2">
+      <div class="extra-wrap"> <strong class="text-1">Our team:</strong></div>
+    </div>
+    <ul>
+      
+      {% for i in empl %}
+        <li>
+          <div class="wrapper border-bot2">
+            <div class="col-photo">
+              <img class="empl-photo" src="{{ i.photo.url }}">
+            </div>
+            <div class="col-text">
+                <h4><strong>{{ i.name }}</strong></h4>
+                <p>{{ i.position }}</p>
+                <p>{{ i.email }}</p>
+            </div>
+            
+            
+          </div>
+        </li>
+      {% endfor %}
+      
+    </ul>
+  </div>
+{% endblock %}

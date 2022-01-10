@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Car Repair</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{% static 'carservice/css/reset.css' %}" type="text/css" media="screen">
+<link rel="stylesheet" href="{% static 'carservice/css/style.css' %}" type="text/css" media="screen">
+</head>
+<body id="page1">
+<div class="main-bg">
+  <div class="bg">
+    <!--==============================header=================================-->
+    <header>
+      <div class="main">
+        <div class="wrapper">
+          <h1><a href="{% url 'home' %}"><img src="{% static 'carservice/images/logo.png' %}"><p id='logotext'>Service Gadget Hackwrench</p></a></h1>
+          <div class="fright">
+            <div class="indent"> <span class="address">Minsk, Nekrasova str, 42</span> <span class="phone">Tel: +375 29 123 45 67</span> </div>
+          </div>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a class="active" href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'team' %}">Our team</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'feedback' %}">Feedback</a></li>
+          </ul>
+        </nav>
+        <div class="page-home-all">
+          <img id="home-all" src="{% static 'carservice/images/page1-all.jpg' %}">
+        </div>
+      </div>
+    </header>
+    <!--==============================content================================-->
+    <section id="content">
+      <div class="main">
+        <div class="container_12">
+          <div class="container-bot">
+            <div class="container-top">
+              <div class="container">
+                <div class="wrapper">
+                  <article class="grid_8">
+                    {% block content %}
+                    {% endblock %}
+                  </article>
+                  <article class="grid_4">
+                    <div class="indent-left2 indent-top">
+                      <div class="box p4">
+                        <div class="padding">
+                          <div class="wrapper">
+                            <img class="img-indent" src="{% static 'carservice/images/page1-img4.png' %}">
+                            <div class="extra-wrap">
+                              <h3 class="p0">Our Hours:</h3>
+                            </div>
+                          </div>
+                          <p class="color-1 p0">Monday - Friday: 8:00 - 20:00</p>
+                          <p class="color-1 p1">Saturday - Sunday: 9:00 - 18:00</p>
+                        </div>
+                      </div>
+                      <div class="indent-left">
+                        <dl class="main-address">
+                          <dt>Minsk, Nekrasova str, 42</dt>
+                          <dd><span>Phone:</span> +375 29 123 45 67</dd>
+                          <dd><span>E-mail:</span><a href="#">ServGadgHack@gmail.com</a></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!--==============================footer=================================-->
+    <footer>
+      <div class="main"> <span>Thank you for choosing our car service</span>  <a href="#">ServGadgHack.com</a> </div>
+    </footer>
+  </div>
+</div>
+
+
+</body>
+</html>

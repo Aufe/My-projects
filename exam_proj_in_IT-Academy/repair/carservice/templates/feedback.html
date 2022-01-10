@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="indent-left">
+    <h3 class="p1">Feedback</h3>
+    <form id="contact-form" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <fieldset>
+        <label><span class="text-form">Name:</span>
+          
+          {{ form.name }}
+        </label>
+        <label><span class="text-form">Email:</span>
+          
+          {{ form.email }}
+        </label>
+        <label><span class="text-form">Phone:</span>
+          
+          {{ form.phone }}
+        </label>
+        <label><span class="text-form">Car model/year:</span>
+          
+          {{ form.car }}
+        </label>
+        <div class="wrapper">
+          <div class="text-form">Message:</div>
+          <div class="extra-wrap">
+          
+          {{ form.message }}
+          
+        </label>
+        <div class="wrapper">
+          <div class="extra-wrap">
+            <div class="buttons"><button class="button" type="submit">Send</a></div>
+            
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+{% endblock %}
