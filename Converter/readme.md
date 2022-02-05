@@ -4,7 +4,7 @@ This program will convert a parquet file to a csv file, and vice versa.
 
 ## Using
 
-python concert.py [--parquet2csv <p>"<parquet-filename>"</p> csv-filename] | [--csv2parquet csb-filename parquet-filename] | [--get-schema parquet-filename] | [--help]
+python concert.py [--parquet2csv "parquet-filename" "csv-filename"] | [--csv2parquet "csb-filename" "parquet-filename"] | [--get-schema 'parquet-filename"] | [--help]
 
 ## Command line options
 
