@@ -8,10 +8,10 @@ python concert.py [--parquet2csv "parquet-filename" "csv-filename"] | [--csv2par
 
 ## Command line options
 
--   --parquet2csv - This option will convert a parquet file to a csv file.
--   --csv2parquet - This option will convert a csv file to a parquet file.
--   --get-schema - This option will show a schema of parquet file.
--   --help - Show message about options of program.
+-   --parquet2csv - convert a parquet file to a csv file.
+-   --csv2parquet - convert a csv file to a parquet file.
+-   --get-schema - show a schema of parquet file.
+-   --help - show message about options of program.
 
 ## Examples
 
