@@ -2,9 +2,17 @@
 
 This program will convert a parquet file to a csv file, and vice versa.
 
+## Downloading
+
+'''
+pip install -r requirements.txt
+'''
+
 ## Running
 
-  python concert.py [--parquet2csv "parquet-filename" "csv-filename"] | [--csv2parquet "csb-filename" "parquet-filename"] | [--get-schema 'parquet-filename"] | [--help]
+'''
+python concert.py [--parquet2csv "parquet-filename" "csv-filename"] | [--csv2parquet "csb-filename" "parquet-filename"] | [--get-schema 'parquet-filename"] | [--help]
+'''
 
 ## Command line options
 
@@ -15,5 +23,7 @@ This program will convert a parquet file to a csv file, and vice versa.
 
 ## Examples
 
-1.  python --parqeut2csv test.parquet test.csv  (Will convert a test.parquet to a test.csv)
-2.  python --get-scheme test.parquet (Will show a schema of test.parquet)
+'''
+python --parqeut2csv test.parquet test.csv  (Will convert a test.parquet to a test.csv)
+python --get-scheme test.parquet (Will show a schema of test.parquet)
+'''
