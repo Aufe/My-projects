@@ -4,6 +4,10 @@ This program will convert a parquet file to a csv file, and vice versa.
 
 ## Downloading
 
+```
+npm install
+npm run serve
+```
 '''
 pip install -r requirements.txt
 '''
