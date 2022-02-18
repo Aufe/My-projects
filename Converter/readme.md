@@ -17,9 +17,9 @@ python concert.py [--parquet2csv <src-filename> "dst-filename"] | [--csv2parquet
 ## Command line options
 
 
--  | столбец 3     | выровнен вправо    
--  | столбец 2     | выровнен по центру 
--  | зебра-строки  | прикольные         
+| столбец 3     | выровнен вправо    
+| столбец 2     | выровнен по центру 
+| зебра-строки  | прикольные         
 
 -   --parquet2csv - convert a parquet file to a csv file.
 -   --csv2parquet - convert a csv file to a parquet file.
