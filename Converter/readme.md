@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## Running
 
 ```
-python concert.py [--parquet2csv "src-filename" "dst-filename"] | [--csv2parquet "src-filename" "dst-filename"] | [--get-schema "filename"] | [--help]
+python concert.py [--parquet2csv <src-filename> "dst-filename"] | [--csv2parquet "src-filename" "dst-filename"] | [--get-schema "filename"] | [--help]
 ```
 
 ## Command line options
