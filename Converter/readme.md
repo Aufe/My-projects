@@ -19,13 +19,14 @@ python concert.py [--parquet2csv <src-filename> "dst-filename"] | [--csv2parquet
 
 | столбец 3     | выровнен вправо    
 | столбец 2     | выровнен по центру 
-| зебра-строки  | прикольные         
+| зебра-строки  | прикольные  
 
+```
 -   --parquet2csv - convert a parquet file to a csv file.
 -   --csv2parquet - convert a csv file to a parquet file.
--   --get-schema - show a schema of parquet file.
--   --help - show message about options of program.
-
+-   --get-schema  - show a schema of parquet file.
+-   --help        - show message about options of program.
+```
 ## Examples
 
 ```
