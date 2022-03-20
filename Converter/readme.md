@@ -1,35 +1,35 @@
-## Converter
+What is converter?
+-------------
 
-This program will convert a parquet file to a csv file, and vice versa.
-
-## Downloading
-
-```
-pip install -r requirements.txt
-```
-
-## Running
-
-```
-python concert.py [--parquet2csv <src-filename> "dst-filename"] | [--csv2parquet "src-filename" "dst-filename"] | [--get-schema "filename"] | [--help]
-```
-
-## Command line options
+Converter makes it easy to convert CSV-file to Parquet-file and back. For your convenience this application supports calling from command line.
 
 
-| столбец 3     | выровнен вправо    
-| столбец 2     | выровнен по центру 
-| зебра-строки  | прикольные  
+Quick start
+-----------
+To install required libraries use:
 
-```
--   --parquet2csv - convert a parquet file to a csv file.
--   --csv2parquet - convert a csv file to a parquet file.
--   --get-schema  - show a schema of parquet file.
--   --help        - show message about options of program.
-```
-## Examples
+    python pip install -r requirements.txt
+    
+To convert CSV-file to Parquet-file you should call next request from command line:
 
-```
-python --parqeut2csv test.parquet test.csv  (Will convert a test.parquet to a test.csv)
-python --get-scheme test.parquet (Will show a schema of test.parquet)
-```
+    python converter.py --csv2parquet filename.csv filename.parquet
+    
+A new file will be create in the same directory.
+To convert Parquet-file to CSV-file you should call next request from command line:
+
+    python converter.py --parquet2csv filename.parquet filename.csv
+    
+If you want to get the scheme of Parquet-file:
+
+    python converter.py --get_schema filename.parquet   
+    
+To get some help:
+
+    python converter.py --help      
+    
+
+Contributing
+------------
+
+Help in testing, development, documentation and other tasks is
+highly appreciated and useful to the project.
