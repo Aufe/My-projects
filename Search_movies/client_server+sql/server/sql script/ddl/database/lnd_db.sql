@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS lnd_db;
+
+CREATE DATABASE lnd_db;
